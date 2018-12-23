@@ -5,7 +5,7 @@ $textColor: #3c3c3c;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color:$textColor;
+  color: $textColor;
   font-weight: 300;
 }
 
@@ -24,47 +24,46 @@ $textColor: #3c3c3c;
   height: 120px;
   width: 310px;
   cursor: pointer;
-  &:hover{
+
+  &:hover {
     border: 1px solid #f9c910;
   }
 }
 
+.header,
+.section {
+  width: 1900px;
+  margin: 0 auto;
+}
 
 .header {
-  margin: 0 auto;
   height: 964px;
-  width: 1900px;
   background: url("../img/header_start_img.jpg") no-repeat;
-  .container{
+
+  .container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
 }
 
+
 .header-user {
   margin-top: 54px;
-  height: 33px;
   display: flex;
   justify-content: flex-end;
   margin-right: 102px;
-  font-size: 14px;
-  div {
-    text-align: center;
-    font-weight: 400;
-    padding: 8px;
-    cursor: pointer;
-    &:hover{
-      border: 1px solid #f9c910;
-      padding: 7px;
-    }
-  }
-  .header-user-login{
 
-  }
-  .header-user-register{
-    width: 100px;
-    height: 33px;
+  div {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid #f9c910;
+      padding: 9px;
+    }
   }
 }
 
@@ -75,13 +74,15 @@ $textColor: #3c3c3c;
   list-style: none;
   margin-top: 16px;
   margin-right: 93px;
-  li{
+
+  li {
     height: 50px;
     padding: 14px 30px;
     cursor: pointer;
     font-size: 18px;
     font-weight: 400;
-    &:hover{
+
+    &:hover {
       border: 1px solid;
       padding: 13px 29px;
     }
@@ -99,7 +100,7 @@ $textColor: #3c3c3c;
 
   margin-top: 276px;
 
-  &:after{
+  &:after {
     content: url("../img/decoration.png");
     width: 253px;
     height: 33px;
@@ -114,9 +115,137 @@ $textColor: #3c3c3c;
   margin-top: 185px;
   display: flex;
   justify-content: space-between;
-  .btn{
+
+  .btn {
     font-size: 36px;
   }
 }
 
+.section {
+  height: 382px;
+  background: url("../img/Bg-yellow.png");
+  background-position: center;
 
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .col-1-3 {
+      width: 373px;
+      text-align: center;
+      margin: 55px 73px;
+
+      .numbers {
+        font-size: 90px;
+      }
+
+      .numbers-name {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 20px 0 30px 0;
+      }
+
+      .numbers-text {
+        height: 68px;
+      }
+    }
+  }
+}
+
+.section-steps {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section-steps-title {
+      margin: 80px 0;
+      font-size: 40px;
+      font-weight: 400;
+      letter-spacing: -0.74px;
+      position: relative;
+      &:after {
+        content: url("../img/decoration.png");
+        width: 253px;
+        height: 33px;
+        position: absolute;
+        top: 70px;
+        left: 100px;
+      }
+    }
+
+    .steps-row {
+      width: 1180px;
+      height: 325px;
+      background-color: #ebebeb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .col-1-4 {
+        text-align: center;
+        margin: 0 70px;
+        #img28 {
+          background: url("../img/icons/28.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 80px;
+          height: 70px;
+        }
+        #img016 {
+          background: url("../img/icons/016.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 80px;
+          height: 70px;
+        }
+        #img39 {
+          background: url("../img/icons/39.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 80px;
+          height: 70px;
+        }
+        #img58 {
+          background: url("../img/icons/58.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 80px;
+          height: 70px;
+        }
+        h3 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 150px;
+          height: 52px;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: -0.36px;
+        }
+        hr {
+          margin: 10px auto;
+          width: 88px;
+          height: 1px;
+          white-space: nowrap;
+          border: 0.1px solid $textColor;
+        }
+        p{
+          color: #3c3c3c;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+
+        }
+      }
+    }
+
+    .btn {
+      margin: 50px 0;
+      font-size: 36px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+}
