@@ -4,6 +4,10 @@ import './scss/_App.scss';
 import Header from './header.js';
 import Section from './section.js';
 import SectionSteps from './sectionSteps.js';
+import SectionAboutUs from './sectionAboutUs.js';
+import SectionInfo from './sectionInfo.js';
+import SectionForm from './sectionForm.js';
+
 
 class App extends Component {
   render() {
@@ -12,6 +16,9 @@ class App extends Component {
           <Header />
           <Section />
           <SectionSteps />
+          <SectionAboutUs />
+          <SectionInfo />
+          <SectionForm />
       </div>
     );
   }
