@@ -19,29 +19,24 @@ export default class SectionInfo extends React.Component {
                     </div>
                     <div className={'info-section'}>
                         <div className={'info-left'}>
+                            {/* struktura powinna byc taka, ze to p powinno byc h3, a span powinienen byc p, a wszystko w div */}
                             <p>
                                 <span>Fundacja  “Dbam o Zdrowie”</span>
                                 Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.
-                                <hr />
                             </p>
                             <p>
                                 <span>Fundacja  “Dla dzieci”</span>
                                 Cel i misja: Pomoc zieciom z ubogich rodzin.
-                                <hr />
                             </p>
                             <p>
                                 <span>Fundacja  “Bez domu”</span>
                                 Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania
-                                <hr />
                             </p>
                         </div>
                         <div className={'info-right'}>
                             <p>ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
-                            <hr />
                             <p>ubrania, meble, zabawki</p>
-                            <hr />
                             <p>ubrania, jedzenie, ciepłe koce</p>
-                            <hr />
                         </div>
                     </div>
                     <ul>

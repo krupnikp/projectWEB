@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+
+.section-steps {
+  .container {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      margin-top: 80px;
+    }
+
+    .steps-row {
+      width: 85%;
+      height: 325px;
+      background-color: $sectionsBgColor;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+
+      .col-1-4 {
+        text-align: center;
+
+        img {
+          height: 70px;
+        }
+
+        h3 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: auto;
+          height: 52px;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: -0.36px;
+        }
+
+        hr {
+          margin: 10px auto;
+          width: 88px;
+          border: 1px solid $textColor;
+        }
+
+        p {
+          width: 170px;
+          height: 50px;
+          color: #3c3c3c;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+
+        }
+      }
+    }
+
+    .btn {
+      margin: 50px 0;
+      font-size: 36px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+}

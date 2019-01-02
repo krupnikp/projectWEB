@@ -1,6 +1,6 @@
 import React from 'react'
-import about from './img/about.jpg'
-import signature from './img/icons/Signature.png'
+import about from '../../img/about.jpg'
+import signature from '../../img/icons/Signature.png'
 
 export default class SectionAboutUs extends React.Component {
     render() {

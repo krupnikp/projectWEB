@@ -1,4 +1,6 @@
 import React from 'react'
+import facebook from '../../img/icons/1447355328_06-facebook.png'
+import instagram from '../../img/icons/1447355379_Instagram.png'
 
 export default class SectionForm extends React.Component {
     render() {
@@ -24,6 +26,11 @@ export default class SectionForm extends React.Component {
                             </button>
                         </div>
                     </form>
+                    <footer>
+                        <h2>Copyright 2015 ©  by Anna Dadej</h2>
+                        <img src={facebook} />
+                        <img src={instagram} />
+                    </footer>
                 </div>
             </div>
         );
