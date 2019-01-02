@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from './nav.js'
+import Nav from '../Nav/Nav'
 
 export default class Header extends React.Component {
     render() {
@@ -11,10 +11,10 @@ export default class Header extends React.Component {
                         <div className={'header-user-register'}>Załóż konto</div>
                     </div>
                     <Nav />
-                    <div className={'header-text'}>
-                        <span>Zacznij pomagać! <br/></span>
+                    <h1 className={'titleDecoration header-text'}>
+                        Zacznij pomagać! <br/>
                         Oddaj niechciane rzeczy w zaufane ręce
-                    </div>
+                    </h1>
                     <div className={'header-btns'}>
                         <button className={'btn'}><p>ODDAJ<br/>RZECZ</p></button>
                         <button className={'btn'}><p>ZORGANIZUJ ZBIÓRKĘ</p></button>
