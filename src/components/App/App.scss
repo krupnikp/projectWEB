@@ -1,0 +1,400 @@
+@import '../../styles/variables';
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  height: 964px;
+}
+
+.btn {
+  border: 1px solid;
+  height: 120px;
+  width: 310px;
+  cursor: pointer;
+  background: none;
+  font-weight: 400;
+
+  &:hover {
+    border: 1px solid $hoverBtnColor;
+  }
+}
+
+.header,
+.section,
+.section-steps,
+.section-AboutUs,
+.section-info,
+.form {
+  //uzyc max-width
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.titleDecoration {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+
+  &:after {
+    margin: 20px auto;
+    content: url("../../img/decoration.png");
+    width: 253px;
+    height: 50px;
+    display: block;
+  }
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+
+.header {
+  height: auto;
+  background: url("../../img/header_start_img.jpg") no-repeat;
+  background-size: auto;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.header-user {
+  margin-top: 54px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 102px;
+
+  div {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $hoverBtnColor;
+      padding: 9px;
+    }
+  }
+}
+
+.header-nav {
+  width: 745px;
+  height: 50px;
+  display: flex;
+  list-style: none;
+  margin-top: 16px;
+  margin-right: 93px;
+
+  li {
+    height: 50px;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+
+    &:hover {
+      border: 1px solid;
+      padding: 13px 29px;
+    }
+  }
+}
+
+.header-text {
+  font-weight: 300;
+  margin-top: 250px;
+}
+
+.header-btns {
+  width: 713px;
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+
+  .btn {
+    font-size: 36px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.section {
+  height: 382px;
+  background: url("../../img/Bg-yellow.png");
+  background-position: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .col-1-3 {
+      width: 373px;
+      text-align: center;
+      margin: 55px 73px;
+
+      .numbers {
+        font-size: 90px;
+      }
+
+      .numbers-name {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 20px 0 30px 0;
+      }
+
+      .numbers-text {
+        height: 68px;
+      }
+    }
+  }
+}
+
+.section-AboutUs {
+  background: $sectionsBgColor;
+  height: 967px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .section-AboutUs-box {
+      display: flex;
+      flex-direction: column;
+      height: 80%;
+      width: 80%;
+      text-align: center;
+      margin: 150px auto;
+      padding: 0 50px;
+
+      .section-AboutUs-text {
+        padding: 30px 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 54px;
+      }
+
+      #imgSignature {
+        display: flex;
+        margin-left: 50%;
+        object-fit: contain;
+
+      }
+    }
+
+    #imgAbout {
+      object-fit: contain;
+      margin: 55px 0;
+      width: 50%;
+      height: auto;
+    }
+  }
+}
+
+.section-info {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section-info-header {
+      text-align: center;
+      width: 600px;
+      margin-top: 100px;
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          height: 78px;
+          font-size: 24px;
+          font-weight: 400;
+          border: none;
+
+          &:focus {
+            border: 1px solid;
+          }
+        }
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: 400;
+        margin: 50px 0;
+      }
+    }
+
+    .info-section {
+      display: flex;
+      justify-content: space-between;
+      width: 1266px;
+
+      hr {
+        border: 1px solid $textColor;
+        width: 496px;
+        margin: 33px 0;
+      }
+
+      span {
+        display: block;
+        font-size: 29px;
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+      }
+
+      p {
+        font-family: "Merriweather - Light Italic", serif;
+        font-size: 18px;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 50px;
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -20px;
+          height: 1px;
+          width: 100%;
+          background: black;
+        }
+      }
+
+      .info-left {
+        margin: auto 0;
+      }
+
+      .info-right {
+        margin: 0;
+        text-align: right;
+
+        p {
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+          height: 53px;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      font-size: 24px;
+      font-weight: 400;
+
+      li {
+        list-style: none;
+        height: 42px;
+        width: 35px;
+      }
+    }
+  }
+}
+
+.form {
+  height: 800px;
+  background: #eeefef url("../../img/footer_bg_img.jpg") no-repeat;
+  background-size: 80% 100%;
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+
+    h1 {
+      margin: 100px;
+    }
+
+    h4 {
+      text-transform: uppercase;
+    }
+
+    form {
+      height: 100%;
+      align-self: flex-end;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #email,
+    #name {
+      width: 45%;
+      &::placeholder {
+        color: $textColor;
+      }
+    }
+
+    .form-control {
+      padding: 10px;
+      background: none;
+      font-size: 18px;
+      outline: none;
+      margin: 20px 0;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    #message {
+      width: 100%;
+      &::placeholder {
+        color: $textColor;
+      }
+    }
+  }
+
+  .form-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100px;
+    height: 50px;
+  }
+
+  footer {
+    width: 80%;
+    height: 50px;
+    color: #3c3c3c;
+    font-family: Merriweather, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    h2 {
+      text-align: center;
+      font-weight: 300;
+      width: 90%;
+    }
+    img {
+      margin: 0 5px;
+      border: 1px solid black;
+      padding: 10px;
+      height: 40px;
+      width: 40px;
+      object-fit: contain;
+    }
+  }
+}
