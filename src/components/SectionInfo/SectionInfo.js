@@ -3,7 +3,7 @@ import React from 'react'
 export default class SectionInfo extends React.Component {
     render() {
         return (
-            <div className={'section-info'}>
+            <div id={'sectionInfo'} className={'section-info'}>
                 <div className={'container'}>
                     <div className={'section-info-header'}>
                         <h1 className={'titleDecoration'}>Komu pomagamy?</h1>

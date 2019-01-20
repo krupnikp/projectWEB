@@ -5,7 +5,7 @@ import signature from '../../img/icons/Signature.png'
 export default class SectionAboutUs extends React.Component {
     render() {
         return (
-            <div className={'section-AboutUs'}>
+            <div id={'aboutUs'} className={'section-AboutUs'}>
                 <div className={'container'}>
                     <div className={'section-AboutUs-box'}>
                         <h1 className={'titleDecoration'}>O nas</h1>

@@ -8,7 +8,7 @@ import img016 from '../../img/icons/016.png'
 export default class SectionSteps extends React.Component {
     render() {
         return (
-            <div className={'section-steps'}>
+            <div id={'sectionSteps'} className={'section-steps'}>
                 <div className={'container'}>
                     <h1 className={'titleDecoration'}>Wystarczą 4 proste kroki</h1>
                     <div className={'steps-row'}>

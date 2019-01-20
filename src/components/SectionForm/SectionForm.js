@@ -5,7 +5,7 @@ import instagram from '../../img/icons/1447355379_Instagram.png'
 export default class SectionForm extends React.Component {
     render() {
         return (
-            <div className={'form'}>
+            <div id={'sectionForm'} className={'form'}>
                 <div className={'container'}>
                     <form>
                     <h1 className={'titleDecoration'}>Skontaktuj się z nami</h1>
